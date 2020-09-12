@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link href="css/boostrap.css" rel="stylesheet">
+        <script src="js/boostrap.min.js"></script>
+        <meta name="viewport" content="width=device-width">
+        <style>
+        @media  screen and (max-width: 480px) {
+        .fsmt{ display: none}
+        }
+        body{font-family: arial, sans-serif;margin: 0%}
+        #formin{text-align: center; padding: 200px; padding-top: 40px; padding-bottom: 70px;margin-top: 120px}
+        .upp-nav{text-align: right; color: black; font-size: 13px; margin: 15px}
+        a{text-decoration: none;color: black;}
+        #top-nav:hover{text-decoration: underline;}
+        #search-box{ margin: 10px; width: 500px; height: 2.8px; outline: none; font-size: 16px; border-radius: 30px; padding: 18px; border: solid 0.01px #c7c7c7;}
+        #search-box:hover{transition: 200ms;box-shadow: 0px 1px 4px 0.5px rgb(197, 197, 197);}
+        #search-box:focus{transition: 200ms;box-shadow: 0px 1px 4px 0.5px rgb(197, 197, 197);}
+        #gs, #ifl{ position: static;;width: 140px;font-size: 15px;padding: 8px; margin: 4px; background-color: #e6e6e6; outline: none; border-radius: 3px; border: 0.5px solid #cccccc; opacity: 0.6; outline: none;}
+        #gs:hover, #ifl:hover{opacity: 1; box-shadow: 0px 0.5px 1px 0.5px #d1d1d1; background-color: #f2f2f2}
+        #synn{border:1px solid #3341ff; padding: 5px; border-radius: 3px;background-color: #3381ff; color: white; opacity: 0.8;}
+        #synn:hover{opacity: 1;}
+        footer{position: relative;}
+        .logo{margin: 10px;position:relative;}
+        .imgtxt{position: absolute;padding-top: 70px;right:335px;color: blue;}
+        .footer{position: fixed; left:0;bottom:0;width:100%;background-color:#e6e6e6;height: 12%;opacity: 0.6; font-size: 14px;}
+        .prefoot{border-bottom: 0.1pc solid #cfcfcf; width: 100%; border-top: 1px solid #cfcfcf}
+        .prefootcont{margin: 12px;padding-bottom:2px;margin-left: 25px;}
+        .footlinks{margin:12px; margin-left: 25px;}
+        .footer a{padding-right: 25px;}
+        .la{float: right;}
+        .footer a:hover{text-decoration: underline;}
+        </style>
+    </head>
+    <body>
+      <div class="upp-nav">
+          <a id="top-nav"href="imgSearch.html">Image Search</a> | <a id="top-nav" href="advancedSearch.html">Advanced Search</a> &nbsp &nbsp <a id="synn" href="#">Sign in</a>
+      </div>
+        <form id="formin" action="https://google.com/search">
+          <div class="logo">
+            <img src="googlelogo.png" alt="Google search">
+          </div>
+          <div class="imgs">
+            <input type="img" name="q" id="search-box" autofocus>
+          </div>
+            <br><br>
+            <div class="fsmt">
+              <input id="gs" type="submit" name="btnk" value="Google search" class="b"><input id="ifl" type="submit" name="btnI" value="I'm Feeling Lukcy" class="b">
+            </div>
+        </form>
+        <div class="footer">
+          <div class="prefoot">
+            <div class="prefootcont">
+              <a href="#">{{Country}}</a>
+            </div>
+          </div>
+          <!--<div class="line"></div>-->
+          <div class="footlinks">
+            <a href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
+            <a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>
+            <span class="la">
+              <a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
+              <a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a>
+              <a href="https://www.google.com/preferences?hl=en-NG&fg=1">Settings</a>
+            </span>
+          </div>
+          </div>
+    </body>
+</html>
