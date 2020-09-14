@@ -6,18 +6,16 @@
         <script src="js/boostrap.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-        @media  screen and (max-width: 499px) {
-        .fsmt{ display: none}
-        #search-box{height: 0px; width: 60%}
-        #formin{margin-top: 25%}
-        .prefootcont{padding-bottom: 5px}
-        }
-        @media screen and  (min-width: 500px) {
-          #search-box{min-width: 40%}
-        }
-        
+        @media  screen and (min-width: 768px) {#search-box{height: 0px; width: 450px}}
+        @media screen and (max-width: 767px){#search-box{height: 0px; width: 50%; padding:15px;}
+        .la{float: right;}#gs, #ifl{display: none;}#formin{margin-top: 25%}.prefootcont{padding-bottom: 5px}
+        #synn{display: none;}.prefoot{display: none;}.footer{width: auto; height: auto; float: left;}
+        .hsw{display: none;}.footer a{float: left; text-align: center; margin-top:10px;}}
+        @media screen and (max-width: 424px){#search-box{width: 60%;}}
+        @media screen and (max-width: 280px){.hsw{display: none;}.footer a{margin:0px}.footer{text-align: center;} #search-box{width: 70%;}}
+        @media screen and (max-width: 252px){#search-box{width: 80%;}.footer{display: none}.upp-nav{display: none;}}
         body{font-family: arial, sans-serif;margin: 0%; display: block;}
-        #formin{text-align: center;padding-top: 8%; padding-bottom: 3px; border:solid 1px black; max-width: 100%;margin-top: 7%}
+        #formin{text-align: center;padding-top: 8%; padding-bottom: 3px; max-width: 100%;margin-top: 7%}
         .upp-nav{text-align: right; color: black; font-size: 13px; margin: 15px}
         a{text-decoration: none;color: black;}
         #top-nav:hover{text-decoration: underline;}
@@ -29,7 +27,7 @@
         #synn{border:1px solid #3341ff; padding: 5px; border-radius: 3px;background-color: #3381ff; color: white; opacity: 0.8;}
         #synn:hover{opacity: 1;}
         footer{position: relative;}
-        .logo{margin: 10px;position:relative;border:1px solid grey;}
+        .logo{margin: 10px;position:relative;}
         .glo{max-width: 30%}
 
         .footer{position: fixed; left:0;bottom:0;width:100%;background-color:#e6e6e6;height: 12%;opacity: 0.6; font-size: 14px;}
@@ -39,7 +37,7 @@
         .footer a{padding-right: 25px;}
         .la{float: right;}
         .footer a:hover{text-decoration: underline;}
-        .stext{max-width: 100%; border:1px solid black}
+        .stext{max-width: 100%;}
         </style>
     </head>
     <body>
@@ -66,14 +64,14 @@
           </div>
           <!--<div class="line"></div>-->
           <div class="footlinks">
-            <a href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="hsw">Advertising</a>
             <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
             <a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-            <a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>
+            <a class="hsw" href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>
             <span class="la">
               <a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
-              <a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a>
-              <a href="https://www.google.com/preferences?hl=en-NG&fg=1">Settings</a>
+              <a href="https://policies.google.com/terms?hl=en-NG&fg=1" class="hsw">Terms</a>
+              <a href="https://www.google.com/preferences?hl=en-NG&fg=1" class="hsw">Settings</a>
             </span>
           </div>
           </div>

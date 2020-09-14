@@ -4,17 +4,16 @@
         <title>Image Search</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style media="screen">
-        @media  screen and (max-width: 499px) {
-        .fsmt{ display: none}
-        #search-box{height: 0px; width: 60%}
-        #formin{margin-top: 25%}
-        .prefootcont{padding-bottom: 5px}
-        }
-        @media screen and  (min-width: 500px) {
-          #search-box{min-width: 40%}
-        }
+        @media  screen and (min-width: 768px) {#search-box{height: 0px; min-width: 40%}}
+        @media screen and (max-width: 767px){#search-box{height: 0px; width: 50%; padding:15px;}
+        .la{float: right;}#gs, #ifl{display: none;}#formin{margin-top: 25%}.prefootcont{padding-bottom: 5px}
+        #synn{display: none;}.prefoot{display: none;}.footer{width: auto; height: auto; float: left;}
+        .hsw{display: none;}.footer a{float: left; text-align: center; margin-top:10px;}}
+        @media screen and (max-width: 424px){#search-box{width: 60%;}}
+        @media screen and (max-width: 280px){.hsw{display: none;}.footer a{margin:0px}.footer{text-align: center;} #search-box{width: 70%;}}
+        @media screen and (max-width: 252px){#search-box{width: 80%;}.footer{display: none}.upp-nav{display: none;}}
         body{font-family: arial, sans-serif;margin: 0%; display: block;}
-        #formin{text-align: center; padding: 200px; padding-top: 1px; padding-bottom: 70px;margin-top: 120px}
+        #formin{text-align: center;padding-top: 8%; padding-bottom: 3px; max-width: 100%;margin-top: 7%}
         .upp-nav{text-align: right; color: black; font-size: 13px; margin: 15px}
         a{text-decoration: none;color: black;}
         #top-nav:hover{text-decoration: underline;}
@@ -22,12 +21,12 @@
         #search-box:hover{transition: 200ms;box-shadow: 0px 1px 4px 0.5px rgb(197, 197, 197);}
         #search-box:focus{transition: 200ms;box-shadow: 0px 1px 4px 0.5px rgb(197, 197, 197);}
         #gs, #ifl{ position: static;max-width: 140px;font-size: 15px;padding: 8px; margin: 4px; background-color: #e6e6e6; outline: none; border-radius: 3px; border: 0.5px solid #cccccc; opacity: 0.6; outline: none;}
-        #gs:hover, #ifl:hover{opacity: 1; box-shadow: 0px 1px 4px 0.5px rgb(197, 197, 197);}
+        #gs:hover, #ifl:hover{opacity: 1; box-shadow: 0px 0.5px 1px 0.5px #d1d1d1; background-color: #f2f2f2}
         #synn{border:1px solid #3341ff; padding: 5px; border-radius: 3px;background-color: #3381ff; color: white; opacity: 0.8;}
         #synn:hover{opacity: 1;}
         footer{position: relative;}
-        .logo{margin: 10px;position:relative;border:1px solid grey;}
-        .imgtxt{position: absolute;padding-top: 70px;right:335px;color: blue;}
+        .logo{margin: 10px;position:relative;}
+        .glo{max-width: 30%}
         .footer{position: fixed; left:0;bottom:0;width:100%;background-color:#e6e6e6;height: 12%;opacity: 0.6; font-size: 14px;}
         .prefoot{border-bottom: 0.1pc solid #cfcfcf; width: 100%; border-top: 1px solid #cfcfcf}
         .prefootcont{margin: 12px;padding-bottom:2px;margin-left: 25px;}
@@ -35,7 +34,7 @@
         .footer a{padding-right: 25px;}
         .la{float: right;}
         .footer a:hover{text-decoration: underline;}
-        .glo{max-width: 30%}
+        .stext{max-width: 100%; border:1px solid black}
         </style>
     </head>
     <body>
@@ -46,7 +45,6 @@
         <form id="formin" action="https://www.google.com.ng/search">
           <div class="logo">
             <img src="googlelogo.png" alt="Google search" class="glo">
-            <span class="imgtxt">Images</span>
           </div>
             <input type="text" name="q" id="search-box" autofocus autocomplete="">
             <input type="hidden" name="tbm" value="isch">
@@ -59,14 +57,14 @@
           </div>
           <!--<div class="line"></div>-->
           <div class="footlinks">
-            <a href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://ads.google.com/intl/en_ng/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="hsw">Advertising</a>
             <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Business</a>
             <a href="https://about.google/?utm_source=google-NG&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
-            <a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>
+            <a class="hsw" href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a>
             <span class="la">
               <a href="https://policies.google.com/privacy?hl=en-NG&fg=1">Privacy</a>
-              <a href="https://policies.google.com/terms?hl=en-NG&fg=1">Terms</a>
-              <a href="https://www.google.com/preferences?hl=en-NG&fg=1">Settings</a>
+              <a href="https://policies.google.com/terms?hl=en-NG&fg=1" class="hsw">Terms</a>
+              <a href="https://www.google.com/preferences?hl=en-NG&fg=1" class="hsw">Settings</a>
             </span>
           </div>
         </div>
